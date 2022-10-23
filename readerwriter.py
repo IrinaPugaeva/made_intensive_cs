@@ -7,7 +7,9 @@ class BaseReader():
 
 class BaseWriter():
     def write(self, fileobject):
-        raise NotImplementedError
+        print("aasdsdsd")
+	for _ in range(10):
+	    print(7)
 
 class CSVReader(BaseReader):
     def read(self, fileobject):

@@ -54,3 +54,5 @@ def read_data(fileobj, reader: BaseReader):
 def dump_data(data, fileobj, writer: BaseWriter):
     w = writer(data)
     return w.write(fileobj)
+
+print()

@@ -55,4 +55,12 @@ FROM off a hill whose concave womb reworded
 
         self.assertEqual(expected_data, data)
 
+    def test_csv_reader(self):
+        expected_data = [['SN', 'Name', 'Contribution'],
+                         ['Linus Torvalds', 'Linux Kernel'],
+                         ['Tim Berners-Lee', 'World Wide Web'],
+                         ['Guido van Rossum', 'Python Programming']]
+        self.assertEqual(expected_data, read_data(open('file.csv'), CSVReader))
+
+
  

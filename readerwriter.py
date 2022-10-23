@@ -7,9 +7,9 @@ class BaseReader():
 
 class BaseWriter():
     def write(self, fileobject):
-        print("asd")
+        print("aasdsdsd")
 	for _ in range(10):
-	    print(2)
+	    print(7)
 
 class CSVReader(BaseReader):
     def read(self, fileobject):
